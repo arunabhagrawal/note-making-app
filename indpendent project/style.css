@@ -1,0 +1,144 @@
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+.navlist{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+ .navlist li{
+    padding: 23px;
+}
+.navbar img{
+    width: 5%;
+    border-radius: 50px;
+}
+ .navlist li a{
+   text-decoration: none;
+   color: black;
+}
+.first-section{
+    text-align: center;
+    height: 400px;
+    padding-top: 100px;
+}
+.form-question{
+    background-color: wheat;
+    height: 350px;
+    padding: auto;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.form-question div{
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+.form-question div input{
+  width: 24%;
+  margin-left: 38%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.form-question div button{
+    width: 20%;
+    margin-left: 41%;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+
+@media screen and (max-width:500px){
+    
+    .navlist{
+        flex-direction: column;
+        
+    }
+    .navbar{
+        flex-direction: column;
+        height: fit-content;
+        position: inherit;
+    }
+
+    .navbar img{
+        width: 50px;
+    }
+    .first-section{
+        height: 250px;
+    }
+    div form{
+    width: 100%;
+    }
+    .second-section a img{
+        margin-left: auto;
+        width: 50px;
+       padding-left: 5%;
+    }
+    .third-section{
+        flex-direction: column;
+        padding-left: 1vh;
+    }
+    .h-nav{
+      height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px;
+}
+  .second-section a img{
+        margin-left: 1%;
+        width: 50px;
+    
+    }
+.second-section{
+   padding-left: 46%;
+   background-color: aqua;
+   height: 181px;
+}
+.about-heading{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-div{
+    margin-top: 57px;
+    background-color: aquamarine;
+    height: 250px;
+    text-align: center;
+}
+.third-section div{
+    padding-top: 5%;
+    text-align: center;
+    border: 5px solid maroon;
+    width: 300px;
+    height: 300px;
+   margin-left: 10px;
+}
+.third-section{
+    text-align: center;
+    display: flex;
+    padding-top: 90px;
+}
+.third-section H1{
+   margin: 50px;
+}

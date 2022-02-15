@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask somthing and mystic himself will reply on your email</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <img src="MYSTIC.png" alt="logo"></img>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Question-answer.html">Question answer</a></li>
+        </ul>
+
+
+    </nav>
+    <div class="form-question">
+        <h1>Mystic_Playz question and answer time</h1>
+        <form method="POST" action=" https://sheetdb.io/api/v1/pcqm3ak60b1qf" id="my-form">
+            <div>
+                <input name="data[Email]" type="email" placeholder="Email" required>
+                <input name="data[Name]" type="text" placeholder="Name" required>
+                <textarea name="data[Question]" id="" cols="30" rows="10"></textarea>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        var form = document.querySelector("#my-form")
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("my-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+
+            });
+        });
+    </script>
+</body>
+
+</html>
